@@ -8,7 +8,7 @@ LOG_FILENAME="log.txt"
 logging.basicConfig(filename=LOG_FILENAME,level=logging.WARNING)
 
 app = Flask(__name__)
-bot = Bot()
+bot = Bot(console_qr=True)
 
 def checkAndSend(to, content):
     if to=="" or content=="":
